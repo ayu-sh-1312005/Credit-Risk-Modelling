@@ -31,7 +31,19 @@ with c3:
     total_dpd = st.number_input("Avg Days past due", 0,step=1)
 
 # -------- Row 3 --------
-c1, c2, c3 = st.columns(3)
+c1, c2,c3= st.columns(3)
+
+with c1:
+    delinquent_months = st.number_input("Delinquent Months", 0, 60, 0)
+
+with c2:
+    number_of_open_accounts = st.number_input("Number of Open Accounts", 0, 20, )
+
+with c3:
+    loan_type = st.selectbox("Loan Type", ["Secured", "Unsecured"])
+
+# -------- Row 4 --------
+c1, c2 = st.columns(2)
 
 with c1:
     residence_type = st.selectbox("Residence Type", ["Owned", "Rented"])
@@ -39,17 +51,6 @@ with c1:
 with c2:
     loan_purpose = st.selectbox("Loan Purpose", ["Education", "Home", "Personal"])
 
-with c3:
-    loan_type = st.selectbox("Loan Type", ["Secured", "Unsecured"])
-
-# -------- Row 4 --------
-c1, c2= st.columns(3)
-
-with c1:
-    delinquent_months = st.number_input("Delinquent Months", 0, 60, 0)
-
-with c2:
-    number_of_open_accounts = st.number_input("Number of Open Accounts", 0, 20, )
 
 # -------- Button --------
 st.markdown("---")
