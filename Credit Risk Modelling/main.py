@@ -74,4 +74,4 @@ if st.button("🚀 Calculate Risk"):
     st.write(f'Default Probability: {probability}%')
     st.write(f'Credit Score: {credit_score}')
     st.write(f'Rating: {rating}')
-    st.json(input_data)
+    #st.json(input_data)
