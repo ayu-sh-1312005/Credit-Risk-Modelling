@@ -3,9 +3,12 @@ import pandas as pd
 import numpy as np
 
 import os
+import joblib
 
 BASE_DIR = os.path.dirname(__file__)
 MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+
+model_data = joblib.load(MODEL_PATH)
 
 model_data = joblib.load(MODEL_PATH)
 model = model_data['model']
