@@ -1,91 +1,128 @@
-# Credit Risk Modelling
+# 🚀 ML-Based Credit Risk Modelling
 
-## Overview
-This project implements a machine learning-based Credit Risk Modelling system to classify loan applicants into different risk categories based on their financial and behavioral data. The goal is to assist financial institutions in making better lending decisions by predicting the creditworthiness of applicants.
-
-The model categorizes customers into multiple risk levels (e.g., P1, P2, P3, P4), where lower categories represent higher creditworthiness and lower default risk.
+🔗 **Live App:** https://ml-based-credit-risk-modelling.streamlit.app/
 
 ---
 
-## Problem Statement
-Financial institutions face challenges in identifying high-risk borrowers due to large volumes of data and complex relationships between financial attributes. This project aims to build a predictive model that classifies customers based on their likelihood of default using historical credit data.
+## 📌 Overview
+
+This project is a **Machine Learning-based Credit Risk Prediction System** that helps financial institutions assess whether a loan applicant is likely to **default or not**.
+
+Using historical loan data and advanced ML techniques, the model predicts **creditworthiness**, enabling better decision-making and risk mitigation.
 
 ---
 
-## Dataset Description
-The dataset consists of customer financial and behavioral attributes, including:
+## 🎯 Key Features
 
-- Demographics (Age, Gender, Marital Status)
-- Financial attributes (Income, loan-related features)
-- Credit behavior (delinquencies, payment history)
-- Loan enquiry details
-- Target variable: `Approved_Flag`
-
-Key observations:
-- Multiple categorical and numerical features
-- Missing values represented using placeholders
-- Class imbalance in risk categories
+✨ User-friendly interactive web app
+📊 Real-time prediction of loan default risk
+🤖 Machine Learning model with preprocessing pipeline
+📈 Feature scaling and transformation included
+⚡ Fast and lightweight deployment using Streamlit
 
 ---
 
-## Project Workflow
+## 🧠 Tech Stack
 
-### Data Preprocessing
-- Handling missing values
-- Removing irrelevant features
-- Encoding categorical variables
-- Normalizing numerical features
-
-### Exploratory Data Analysis (EDA)
-- Distribution analysis
-- Feature correlation analysis
-- Relationship between features and target variable
-
-### Feature Selection
-- Statistical tests (Chi-Square, ANOVA)
-- Removal of redundant features
-- Selection of significant predictors
-
-### Model Building
-Machine learning models used:
-- Random Forest Classifier
-- XGBoost Classifier
-
-### Model Evaluation
-Evaluation metrics used:
-- Accuracy
-- Precision
-- Recall
-- F1 Score
+* **Python**
+* **NumPy & Pandas** (Data Processing)
+* **Scikit-learn** (ML Models & Preprocessing)
+* **XGBoost** (Advanced Boosting Model)
+* **Streamlit** (Web App Deployment)
+* **Joblib** (Model Serialization)
 
 ---
 
-## Results
+## 🏗️ Project Structure
 
-- XGBoost achieved higher accuracy compared to Random Forest
-- Model accuracy significantly improved when credit-related features were included
-- Multi-class classification successfully separates customers into risk categories
-- Performance drops when key financial indicators are removed, showing their importance
-
----
-
-## Key Insights
-
-- Credit score and repayment history are strong predictors of loan approval
-- Certain categories (e.g., mid-risk customers) are harder to classify accurately
-- Feature selection significantly improves model performance
-- Ensemble methods outperform basic models
+```
+Credit Risk Modelling/
+│
+├── main.py                      # Streamlit app
+├── prediction_helper.py         # Prediction pipeline
+├── artifacts/
+│   └── model_data.joblib        # Trained model & scaler
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## Technologies Used
+## ⚙️ How It Works
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- Matplotlib
-- Seaborn
+1. User inputs applicant details
+2. Data is preprocessed using trained scaler
+3. Model predicts probability of default
+4. Result is displayed instantly
 
 ---
+
+## 🖥️ Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/ayu-sh-1312005/Credit-Risk-Modelling.git
+
+# Navigate to project folder
+cd Credit-Risk-Modelling
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run "Credit Risk Modelling/main.py"
+```
+
+---
+
+## 📊 Model Details
+
+* Algorithm: **XGBoost Classifier**
+* Features: Financial & behavioral attributes
+* Output: **Binary Classification (Default / No Default)**
+
+---
+
+## 🌐 Deployment
+
+The app is deployed using **Streamlit Cloud**:
+
+👉 https://ml-based-credit-risk-modelling.streamlit.app/
+
+---
+
+## 📸 Screenshots
+
+*(Add screenshots here for better presentation)*
+
+---
+
+## 🚀 Future Improvements
+
+* 📉 Add model explainability (SHAP)
+* 📊 Dashboard with analytics
+* 🔐 User authentication system
+* ☁️ API deployment (FastAPI)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Ayush Gupta**
+📍 Computer Science Engineer | Data Science Enthusiast
+
+---
+
+⭐ If you like this project, don’t forget to **star the repo!**
