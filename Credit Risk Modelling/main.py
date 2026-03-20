@@ -43,7 +43,7 @@ with c3:
     loan_type = st.selectbox("Loan Type", ["Secured", "Unsecured"])
 
 # -------- Row 4 --------
-c1, c2,  = st.columns(3)
+c1, c2= st.columns(3)
 
 with c1:
     delinquent_months = st.number_input("Delinquent Months", 0, 60, 0)
