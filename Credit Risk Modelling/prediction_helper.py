@@ -7,7 +7,6 @@ import os
 BASE_DIR = os.path.dirname(__file__)
 MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
 
-
 model_data = joblib.load(MODEL_PATH)
 model = model_data['model']
 scaler=model_data['scaler']
