@@ -5,9 +5,15 @@ import os
 import joblib
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 MODEL_PATH = os.path.join(BASE_DIR, "artifacts", "model_data.joblib")
 
+print("MODEL PATH:", MODEL_PATH)
+print("FILES IN BASE_DIR:", os.listdir(BASE_DIR))
+print("FILES IN ARTIFACTS:", os.listdir(os.path.join(BASE_DIR, "artifacts")))
+
 model_data = joblib.load(MODEL_PATH)
+
 model = model_data['model']
 scaler=model_data['scaler']
 features=model_data['features']
