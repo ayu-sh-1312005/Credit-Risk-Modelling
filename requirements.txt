@@ -5,6 +5,4 @@ seaborn
 scikit-learn
 xgboost
 scipy
-jupyter
-notebook
 joblib
