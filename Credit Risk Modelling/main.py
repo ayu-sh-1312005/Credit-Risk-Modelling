@@ -33,15 +33,6 @@ with c3:
 # -------- Row 3 --------
 c1, c2, c3 = st.columns(3)
 
-with c2:
-    delinquent_months = st.number_input("Delinquent Months", 0, 60, 0)
-
-with c3:
-    number_of_open_accounts = st.number_input("Number of Open Accounts", 0, 20, )
-
-# -------- Row 4 --------
-c1, c2, c3 = st.columns(3)
-
 with c1:
     residence_type = st.selectbox("Residence Type", ["Owned", "Rented"])
 
@@ -50,6 +41,15 @@ with c2:
 
 with c3:
     loan_type = st.selectbox("Loan Type", ["Secured", "Unsecured"])
+
+# -------- Row 4 --------
+c1, c2,  = st.columns(3)
+
+with c1:
+    delinquent_months = st.number_input("Delinquent Months", 0, 60, 0)
+
+with c2:
+    number_of_open_accounts = st.number_input("Number of Open Accounts", 0, 20, )
 
 # -------- Button --------
 st.markdown("---")
