@@ -6,7 +6,7 @@ import os
 import joblib
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "artifact", "model_data.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "artifacts", "model_data.pkl")
 
 model_data = joblib.load(MODEL_PATH)
 model = model_data['model']
