@@ -7,4 +7,3 @@ xgboost
 scipy
 joblib
 streamlit
-altair==4.2.2
